@@ -77,6 +77,11 @@ public class APP_Discord_Driver extends ListenerAdapter {
 									.setContent(String.valueOf(r.nextInt(max + 1)))
 									.build();
 						}
+					} else if (cmd[0].equals("source")) {
+						//reply with github source
+						response = new MessageBuilder()
+								.setContent("https://github.com/neonchickens/APP_Discord_Bot")
+								.build();
 					}
 					
 					if (response != null) {
